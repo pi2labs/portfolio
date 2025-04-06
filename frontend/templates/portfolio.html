@@ -1,0 +1,653 @@
+{% extends "main.html" %}
+
+{% block title %} Nagarjun-Portfolio {% endblock %}
+
+{% block header %} 
+     <!-- Navigation-->
+     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">
+                <img src="/static/images/nagarjun_logo.png" alt="Nagarjun-Logo" width="180" height="80">
+            </a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" style="border-radius:50%; border: 1px solid black;" src="/static/images/nagi_image.png" alt="Nagarjun-Photo" />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading mb-0">Nagarjun Bagalore</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">Backend Developer</p>
+        </div>
+    </header>
+{% endblock %}
+
+{% block content %}
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <h3>Experience</h3>
+                <hr>
+                <!-- Portfolio Item 1 - Infrafibre-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#infrafibreModal">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <h6 class="card-header"><img src="https://infrafibre.de/wp-content/uploads/2022/10/logo.png" width="70" height="30" alt="infrafibre_logo"> Infrafibre Networks GmbH</h6>
+                            <div class="card-body">
+                              <p class="card-text">01.05.2024 - Present</p>
+                              <p class="card-text">Postion: IT-Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 - Freelance.de-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#freelanceModal">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <h6 class="card-header"><img src="/static/images/freelance_de_logo.jpeg" width="30" height="30" alt="freelance.de logo"> freelance.de gmbh</h6>
+                            <div class="card-body">
+                              <p class="card-text">01.07.2023 - 30.04.2024</p>
+                              <p class="card-text">Postion: Automation Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 - check24-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#check24Modal">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <h6 class="card-header"><img src="/static/images/check24.png" width="50" height="30" alt="check24 logo"> CHECK24 Vergleichsportal GmbH</h6>
+                            <div class="card-body">
+                              <p class="card-text">01.08.2020 - 28.02.2023</p>
+                              <p class="card-text">Postion: Software Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item 4 - accenture-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#accentureModal">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <h6 class="card-header"><img src="/static/images/accenture_logo.png" width="40" height="30" alt="accenture_logo"> Accenture Technology GmbH</h6>
+                            <div class="card-body">
+                              <p class="card-text">01.01.2018 - 31.07.2020</p>
+                              <p class="card-text">Postion: Test Engineering Analyst</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item 5 - zensar Technologies -->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#zensarModal">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <h6 class="card-header"><img src="/static/images/zensar_logo.png" width="70" height="30" alt="zensar technologies logo"> Zensar Technologies</h6>
+                            <div class="card-body">
+                              <p class="card-text">01.08.2016 - 30.11.2017</p>
+                              <p class="card-text">Postion: QA Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item 6 - tcs-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#tcsModal">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <h6 class="card-header"><img src="/static/images/Tcs_logo.svg" width="70" height="30" alt="TCS Logo"> Tata Consultancy Services</h6>
+                            <div class="card-body">
+                              <p class="card-text">01.12.2012 - 31.03.2014</p>
+                              <p class="card-text">Postion: Assistant System Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Education</h3>
+                <hr>
+                <div class="row justify-content-around">
+                    <!-- Education - masters-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="card text-bg-light">
+                            <h6 class="card-header"><img src="/static/images/SRH_Hochschule_Heidelberg_logo.svg" width="70" height="30" alt="heidelberg_uni_logo"> Hochschule Heidelberg</h6>
+                            <div class="card-body">
+                              <p class="card-text">2014 - 2016</p>
+                              <p class="card-text"><strong>Master Of Engineering</strong></p>
+                              <p class="card-text">International Business and Engineering (Industrial
+                                Engineering)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Education - bachelors-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="card text-bg-light">
+                            <h6 class="card-header"><img src="/static/images/mvj_logo.png" width="70" height="30" alt="vtu_logo"> VTU - MVJ College of Engineering</h6>
+                            <div class="card-body">
+                              <p class="card-text">2008 - 2012</p>
+                              <p class="card-text"><strong>Bachelor Of Engineering</strong></p>
+                              <p class="card-text">Aeronautical Engineering</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Skills</h3>
+                <hr>
+                <div class="row col-md-12 col-lg-12 md-5">
+                    <div style="text-align:start">
+                        <div class="subheading mb-3">Programming Languages & Tools</div>
+                        <div>
+                            <i class="fa-brands fa-php" style="margin-right:7px; font-size: 2.5em;" data-bs-toggle="tooltip" data-bs-title="PHP"></i>
+                            <i class="fa-brands fa-symfony" style="margin-right:7px; font-size: 2.5em;" data-bs-toggle="tooltip" data-bs-title="Symfony"></i>
+                            <i class="fa-brands fa-python" style="margin-right:7px; font-size: 2.5em;" data-bs-toggle="tooltip" data-bs-title="Python"></i>
+                            <img class="mb-3" src="https://static.djangoproject.com/img/logos/django-logo-positive.svg" alt="django logo" width="80" height="50" data-bs-toggle="tooltip" data-bs-title="Django" style="margin-right:5px;">
+                            <i class="fa-brands fa-html5" style="margin-right:7px; font-size: 2.5em;"></i>
+                            <i class="fa-brands fa-css3-alt" style="margin-right:7px; font-size: 2.5em;"></i>
+                            <i class="fa-brands fa-js" style="margin-right:7px; font-size: 2.5em;"></i>
+                            <i class="fa-brands fa-bootstrap" style="margin-right:7px; font-size: 2.5em;"></i>
+                            <img class="mb-4" src="/static/images/mysql.svg" alt="MySQL logo" width="60" height="50" data-bs-toggle="tooltip" data-bs-title="MySQL">
+                            <img class="mb-4" src="/static/images/elasticsearch-svgrepo-com.svg" alt="Elasticsearch logo" width="60" height="40" data-bs-toggle="tooltip" data-bs-title="Elasticsearch">
+                            <img class="mb-4" src="/static/images/redis.svg" alt="redis logo" width="50" height="40" data-bs-toggle="tooltip" data-bs-title="redis">
+                            <img class="mb-4" src="/static/images/docker.svg" alt="docker logo" width="50" height="40" data-bs-toggle="tooltip" data-bs-title="docker">
+                            <i class="fa-brands fa-git-alt" style="margin-right:7px; font-size: 2.5em;"></i>
+                            <i class="fa-brands fa-linux" style="margin-right:7px; font-size: 2.5em;"></i>
+                            <i class="fa-brands fa-bitbucket" style="margin-right:7px; font-size: 2.5em;"></i>
+                            <i class="fa-brands fa-aws" style="margin-right:7px; font-size: 2.5em;"></i>
+                        </div>
+                    </div>
+                    <div style="text-align:start">
+                        <div class="subheading mb-3">Workflow</div>
+                        <ul class="list-group list-group-flush">
+                            <li class="mb-2" style="text-align: start; margin-left:25px">Mobile-First, Responsive Design</li>
+                            <li class="mb-2" style="text-align: start; margin-left:25px">Cross Browser Testing & Debugging</li>
+                            <li class="mb-2" style="text-align: start; margin-left:25px">Cross Functional Teams</li>
+                            <li class="mb-2" style="text-align: start; margin-left:25px">Agile Development & Scrum</li>
+                          </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section and CV download-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">About Me</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ms-auto"><p class="lead">I am a passionate software developer with extensive work experience also as a software tester, I have good experience in agile project development in backend as well as in frontend applications.</p></div>
+                <div class="col-lg-4 me-auto"><p class="lead">I want to work in an Organization that recognizes my skills, allows me to refine them, and enables me to contribute meaningfully to its engineering and innovation efforts—ultimately supporting its mission and growing into a valuable team member.</p></div>
+            </div>
+            <!-- About Section Button-->
+            <div class="row text-center mt-4 justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <a class="btn btn-xl btn-outline-light" href="" download>
+                        <i class="fas fa-download me-2"></i>
+                        Download Resume
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="btn btn-xl btn-outline-light" href="" download>
+                        <i class="fas fa-download me-2"></i>
+                        Lebenslauf Herunterladen
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section and form-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Contact Section Form-->
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <form id="contactForm" action="{% url 'portfolio' %}" method="POST">
+                        {% csrf_token %}
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required,name" />
+                            <label for="name">Full name</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                            <label for="email">Email address</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email Id is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <!-- Subject input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="subject" name="subject" type="text" placeholder="Enter your subject here..." data-sb-validations="required"></input>
+                            <label for="subject">Subject</label>
+                            <div class="invalid-feedback" data-sb-feedback="subject:required">A subject is required.</div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                            <label for="message">Message</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                        </div>
+
+                        {% if messages %}
+                            {% for message in messages %}
+                                {% if message.tags == 'success' %}
+                                    <div id="submitSuccessMessage">
+                                        <div class="text-center mb-3">
+                                            <div class="fw-bolder">{{ message }}</div>
+                                        </div>
+                                    </div>
+                                {% elif message.tags == 'error' %}
+                                    <div id="submitErrorMessage">
+                                        <div class="text-center text-danger mb-3">
+                                            {{ message }}
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                        <!-- Submit Button-->
+                        <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row justify-content-around">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">
+                        Munich, Germany
+                        <br />
+                        +49-176-85573494
+                        <br />
+                        +91-9482705912 (Whatsapp)
+                        <br />
+                        nagarjun@bagalore.dev
+                        <br />
+                        nagarjun.bagalore@gmail.com
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Around the Web</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/pi2labs" target="_blank"><i class="fab fa-fw fa-github"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/nagarjunbagalore" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.xing.com/profile/Nagarjun_BagaloreSrikantaBabu/web_profiles?expandNeffi=true" target="_blank"><i class="fab fa-fw fa-xing"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; bagalore.dev 2025</small></div>
+    </div>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal Infrafibre Modal-->
+    <div class="portfolio-modal modal fade" id="infrafibreModal" tabindex="-1" aria-labelledby="infrafibreModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Infrafibre Networks GmbH</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <ul class="list-group list-group-flush mb-2">
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Implemented CQRS and DDD-based feature development based on project requirements, and built a high-load backend data processing system. 
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Designed the system architecture for a new pilot project to import data from a third-party system into our MariaDB, achieving a 200% performance improvement. 
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Led the migration to a new CRM system, ensuring smooth data transition and minimal downtime.
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Translated Java code into PHP8.3 using the Symfony7.2 framework, following clean code principles.
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Developed the frontend based on project requirements using HTML, CSS, JavaScript, Bootstrap, and Vue.js.
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Designed and implemented a microservices architecture by developing modular systems that communicate efficiently when required.
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal Freelance.de Modal-->
+    <div class="portfolio-modal modal fade" id="freelanceModal" tabindex="-1" aria-labelledby="freelanceModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary mb-0">freelance.de gmbh</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <ul class="list-group list-group-flush mb-2">
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Developed the frontend based on project requirements using HTML, CSS, JavaScript and Bootstrap.
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Developed new features using PHP and a custom in-house framework. 
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Created unit tests to ensure code reliability and maintainability. 
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Performed functional testing and developed frontend tests using Codeception.
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Utilized Docker during development to ensure consistent environments and streamline the development workflow.
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal Check24 Modal-->
+    <div class="portfolio-modal modal fade" id="check24Modal" tabindex="-1" aria-labelledby="check24Modal" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary mb-0">CHECK24 Vergleichsportal GmbH</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <div class="accordion" id="check24Accordion">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Software Developer: 12.2020 - 02.2023
+                                        </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#check24Accordion">
+                                            <div class="accordion-body">
+                                                <ul class="list-group list-group-flush mb-2">
+                                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                                        DDD based feature development in backend team, designed around Service Oriented Architecture with event stream design
+                                                    </li>
+                                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                                        Scrum-based agile development of high load backend data-processing system 
+                                                    </li>
+                                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                                        Development and maintenance of e-commerce backoffice applications for frontend. 
+                                                    </li>
+                                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                                        Development of middleware applications to support native app requests.
+                                                    </li>
+                                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                                        Creation of REST API's and Data Transfer Objects to the frontend applications using PHP7 and Symfony6
+                                                    </li>
+                                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                                        Crawler focused performance optimization using Python and Django for content management team, resulting in 20% faster runs and cost savings.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item mb-3">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            QA Automation Developer: 08.2020 - 11.2020
+                                        </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#check24Accordion">
+                                            <div class="accordion-body">
+                                                <ul class="list-group list-group-flush mb-2">
+                                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                                        Implementation of Open source Testrail extension for codeception.
+                                                    </li>
+                                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                                        Parallelization of Webdriver tests and Backend tests on Jenkins resulting in 50% performance improvement.
+                                                    </li>
+                                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                                        Implementation and maintenance of more than 300 codeception tests simulating event stream workflow. 
+                                                    </li>
+                                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                                        Onboarding and guidance for QA successors.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal Accenture -->
+    <div class="portfolio-modal modal fade" id="accentureModal" tabindex="-1" aria-labelledby="accentureModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Accenture Technology GmbH</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <ul class="list-group list-group-flush mb-2">
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Automation of second level support activities.
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Implementation of parallel jobs in Jenkins that execute multiple SQL Queries. 
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Creation of complex MySQL Queries to retrieve data from the database. 
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Definition of process workflows.
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Creation and execution of test case and scenario and documenting test results.
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal Zensar Technologies-->
+    <div class="portfolio-modal modal fade" id="zensarModal" tabindex="-1" aria-labelledby="zensarModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Zensar Technologies</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <ul class="list-group list-group-flush mb-2">
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Developed test automation scripts in Java using Selenium to enhance testing efficiency and coverage.
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Creation of test design, test plan and test case documentation on Redmine. 
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 6-->
+    <div class="portfolio-modal modal fade" id="tcsModal" tabindex="-1" aria-labelledby="tcsModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Tata Consultancy Services</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <ul class="list-group list-group-flush mb-2">
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Creation of manual test cases and scenarios based on the business requirements.
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Creation of bug reports on HP ALM 
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light mb-2" style="text-align: start">
+                                        Debugging and maintenance of automation scripts using HP UFT.
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
