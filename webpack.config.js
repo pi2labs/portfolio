@@ -11,7 +11,7 @@ module.exports = {
         portfolio: './src/js/portfolio.js'
     },
     output: {
-        path: path.resolve(__dirname, 'static'),
+        path: path.resolve(__dirname, 'staticfiles'),
         filename: 'js/[name].js'
     },
     module: {
