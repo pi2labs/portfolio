@@ -53,8 +53,19 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
 
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+});
+
+
+document.body.addEventListener('click', function() {
+    document.querySelector('.navbar-toggler').classList.add('collapsed');
+
+    document.querySelector('.navbar-collapse').classList.remove('show');
 });
