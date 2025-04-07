@@ -11,7 +11,7 @@ module.exports = {
         portfolio: './src/js/portfolio.js'
     },
     output: {
-        path: path.resolve(__dirname, 'staticfiles'),
+        path: path.resolve(__dirname, 'static'),
         filename: 'js/[name].js'
     },
     module: {
@@ -35,10 +35,6 @@ module.exports = {
                             tag: 'img',
                             attribute: 'src',
                             type: 'src',
-                            filter: (tag, attribute, attributes, resourcePath) => {
-                                // Process only images in your media folder
-                                return attributes.src.startsWith('@media/')
-                            }
                         }]
                     }
                 }
@@ -59,9 +55,4 @@ module.exports = {
             }]
         })
     ],
-    resolve: {
-        alias: {
-            '@media': path.resolve(__dirname, 'src/media/')
-        }
-    }
 }

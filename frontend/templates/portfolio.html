@@ -1,3 +1,5 @@
+{% load static %}
+
 {% extends "index.html" %}
 
 {% block title %} Nagarjun-Portfolio {% endblock %}
@@ -7,7 +9,7 @@
      <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#page-top">
-                <img src="/staticfiles/images/nagarjun_logo.png" alt="Nagarjun-Logo" width="180" height="80">
+                <img src="{% static 'images/nagarjun_logo.png' %}" alt="Nagarjun-Logo" width="180" height="80">
             </a>
             <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -26,7 +28,7 @@
     <header class="masthead bg-primary text-white text-center">
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Avatar Image-->
-            <img class="masthead-avatar mb-5" style="border-radius:50%; border: 1px solid black;" src="/staticfiles/images/nagi_image.png" alt="Nagarjun-Photo" />
+            <img class="masthead-avatar mb-5" style="border-radius:50%; border: 1px solid black;" src="{% static 'images/nagi_image.png' %}" alt="Nagarjun-Photo" />
             <!-- Masthead Heading-->
             <h1 class="masthead-heading mb-0">Nagarjun Bagalore</h1>
             <!-- Icon Divider-->
@@ -79,7 +81,7 @@
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
                         <div class="card text-bg-light">
-                            <h6 class="card-header"><img src="/staticfiles/images/freelance_de_logo.jpeg" width="30" height="30" alt="freelance.de logo"> freelance.de gmbh</h6>
+                            <h6 class="card-header"><img src="{% static 'images/freelance_de_logo.jpeg' %}" width="30" height="30" alt="freelance.de logo"> freelance.de gmbh</h6>
                             <div class="card-body">
                               <p class="card-text">01.07.2023 - 30.04.2024</p>
                               <p class="card-text">Postion: Automation Developer</p>
@@ -94,7 +96,7 @@
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
                         <div class="card text-bg-light">
-                            <h6 class="card-header"><img src="/staticfiles/images/check24.png" width="50" height="30" alt="check24 logo"> CHECK24 Vergleichsportal GmbH</h6>
+                            <h6 class="card-header"><img src="{% static 'images/check24.png' %}" width="50" height="30" alt="check24 logo"> CHECK24 Vergleichsportal GmbH</h6>
                             <div class="card-body">
                               <p class="card-text">01.08.2020 - 28.02.2023</p>
                               <p class="card-text">Postion: Software Developer</p>
@@ -109,7 +111,7 @@
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
                         <div class="card text-bg-light">
-                            <h6 class="card-header"><img src="/staticfiles/images/accenture_logo.png" width="40" height="30" alt="accenture_logo"> Accenture Technology GmbH</h6>
+                            <h6 class="card-header"><img src="{% static 'images/accenture_logo.png' %}" width="40" height="30" alt="accenture_logo"> Accenture Technology GmbH</h6>
                             <div class="card-body">
                               <p class="card-text">01.01.2018 - 31.07.2020</p>
                               <p class="card-text">Postion: Test Engineering Analyst</p>
@@ -124,7 +126,7 @@
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
                         <div class="card text-bg-light">
-                            <h6 class="card-header"><img src="/staticfiles/images/zensar_logo.png" width="70" height="30" alt="zensar technologies logo"> Zensar Technologies</h6>
+                            <h6 class="card-header"><img src="{% static 'images/zensar_logo.png' %}" width="70" height="30" alt="zensar technologies logo"> Zensar Technologies</h6>
                             <div class="card-body">
                               <p class="card-text">01.08.2016 - 30.11.2017</p>
                               <p class="card-text">Postion: QA Engineer</p>
@@ -139,7 +141,7 @@
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
                         <div class="card text-bg-light">
-                            <h6 class="card-header"><img src="/staticfiles/images/Tcs_logo.svg" width="70" height="30" alt="TCS Logo"> Tata Consultancy Services</h6>
+                            <h6 class="card-header"><img src="{% static 'images/Tcs_logo.svg' %}" width="70" height="30" alt="TCS Logo"> Tata Consultancy Services</h6>
                             <div class="card-body">
                               <p class="card-text">01.12.2012 - 31.03.2014</p>
                               <p class="card-text">Postion: Assistant System Engineer</p>
@@ -153,7 +155,7 @@
                     <!-- Education - masters-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="card text-bg-light">
-                            <h6 class="card-header"><img src="/staticfiles/images/SRH_Hochschule_Heidelberg_logo.svg" width="70" height="30" alt="heidelberg_uni_logo"> Hochschule Heidelberg</h6>
+                            <h6 class="card-header"><img src="{% static 'images/SRH_Hochschule_Heidelberg_logo.svg' %}" width="70" height="30" alt="heidelberg_uni_logo"> Hochschule Heidelberg</h6>
                             <div class="card-body">
                               <p class="card-text">2014 - 2016</p>
                               <p class="card-text"><strong>Master Of Engineering</strong></p>
@@ -165,7 +167,7 @@
                     <!-- Education - bachelors-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="card text-bg-light">
-                            <h6 class="card-header"><img src="/staticfiles/images/mvj_logo.png" width="70" height="30" alt="vtu_logo"> VTU - MVJ College of Engineering</h6>
+                            <h6 class="card-header"><img src="{% static 'images/mvj_logo.png' %}" width="70" height="30" alt="vtu_logo"> VTU - MVJ College of Engineering</h6>
                             <div class="card-body">
                               <p class="card-text">2008 - 2012</p>
                               <p class="card-text"><strong>Bachelor Of Engineering</strong></p>
@@ -188,10 +190,10 @@
                             <i class="fa-brands fa-css3-alt" style="margin-right:7px; font-size: 2.5em;"></i>
                             <i class="fa-brands fa-js" style="margin-right:7px; font-size: 2.5em;"></i>
                             <i class="fa-brands fa-bootstrap" style="margin-right:7px; font-size: 2.5em;"></i>
-                            <img class="mb-4" src="/staticfiles/images/mysql.svg" alt="MySQL logo" width="60" height="50" data-bs-toggle="tooltip" data-bs-title="MySQL">
-                            <img class="mb-4" src="/staticfiles/images/elasticsearch-svgrepo-com.svg" alt="Elasticsearch logo" width="60" height="40" data-bs-toggle="tooltip" data-bs-title="Elasticsearch">
-                            <img class="mb-4" src="/staticfiles/images/redis.svg" alt="redis logo" width="50" height="40" data-bs-toggle="tooltip" data-bs-title="redis">
-                            <img class="mb-4" src="/staticfiles/images/docker.svg" alt="docker logo" width="50" height="40" data-bs-toggle="tooltip" data-bs-title="docker">
+                            <img class="mb-4" src="{% static 'images/mysql.svg' %}" alt="MySQL logo" width="60" height="50" data-bs-toggle="tooltip" data-bs-title="MySQL">
+                            <img class="mb-4" src="{% static 'images/elasticsearch-svgrepo-com.svg' %}" alt="Elasticsearch logo" width="60" height="40" data-bs-toggle="tooltip" data-bs-title="Elasticsearch">
+                            <img class="mb-4" src="{% static 'images/redis.svg' %}" alt="redis logo" width="50" height="40" data-bs-toggle="tooltip" data-bs-title="redis">
+                            <img class="mb-4" src="{% static 'images/docker.svg' %}" alt="docker logo" width="50" height="40" data-bs-toggle="tooltip" data-bs-title="docker">
                             <i class="fa-brands fa-git-alt" style="margin-right:7px; font-size: 2.5em;"></i>
                             <i class="fa-brands fa-linux" style="margin-right:7px; font-size: 2.5em;"></i>
                             <i class="fa-brands fa-bitbucket" style="margin-right:7px; font-size: 2.5em;"></i>
