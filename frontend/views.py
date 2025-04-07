@@ -5,7 +5,7 @@ from django.core.mail import EmailMessage
 
 # Create your views here.
 
-def index(request):
+def portfolio(request):
     form_submitted = False
 
     if request.method == 'POST':
