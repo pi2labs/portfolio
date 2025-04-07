@@ -39,6 +39,13 @@ module.exports = {
                     }
                 }
             },
+            {
+                test: /\.pdf$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'pdf/[name][ext]'
+                }
+            }
         ]
     },
     plugins: [
@@ -47,12 +54,17 @@ module.exports = {
         }),
         new CopyWebpackPlugin({
             patterns: [{
-                from: 'src/media',
-                to: 'images',
-                globOptions: {
-                    ignore: ['**/.DS_Store'], // ignore these files
+                    from: 'src/media',
+                    to: 'images',
+                    globOptions: {
+                        ignore: ['**/.DS_Store'], // ignore these files
+                    },
                 },
-            }]
+                {
+                    from: 'src/pdf',
+                    to: 'pdf',
+                }
+            ]
         })
     ],
 }
