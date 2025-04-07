@@ -177,13 +177,13 @@
                 <h3>Skills</h3>
                 <hr>
                 <div class="row col-md-12 col-lg-12 md-5">
-                    <div style="text-align:start">
+                    <div class="mb-4" style="text-align:start">
                         <div class="subheading mb-3">Programming Languages & Tools</div>
                         <div>
                             <i class="fa-brands fa-php" style="margin-right:7px; font-size: 2.5em;" data-bs-toggle="tooltip" data-bs-title="PHP"></i>
                             <i class="fa-brands fa-symfony" style="margin-right:7px; font-size: 2.5em;" data-bs-toggle="tooltip" data-bs-title="Symfony"></i>
                             <i class="fa-brands fa-python" style="margin-right:7px; font-size: 2.5em;" data-bs-toggle="tooltip" data-bs-title="Python"></i>
-                            <img class="mb-3" src="https://staticfiles.djangoproject.com/img/logos/django-logo-positive.svg" alt="django logo" width="80" height="50" data-bs-toggle="tooltip" data-bs-title="Django" style="margin-right:5px;">
+                            <img class="mb-3" src="https://static.djangoproject.com/img/logos/django-logo-positive.svg" alt="django logo" width="80" height="50" data-bs-toggle="tooltip" data-bs-title="Django" style="margin-right:5px;">
                             <i class="fa-brands fa-html5" style="margin-right:7px; font-size: 2.5em;"></i>
                             <i class="fa-brands fa-css3-alt" style="margin-right:7px; font-size: 2.5em;"></i>
                             <i class="fa-brands fa-js" style="margin-right:7px; font-size: 2.5em;"></i>
@@ -259,7 +259,7 @@
             <!-- Contact Section Form-->
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
-                    <form id="contactForm" action="{% url 'portfolio' %}" method="POST">
+                    <form id="contactForm" action="{% url 'index' %}" method="POST">
                         {% csrf_token %}
                         <!-- Name input-->
                         <div class="form-floating mb-3">
